@@ -1,0 +1,8 @@
+version: '3'
+services:
+  tmpfs_mysqldb:
+    build: .
+    privileged: true
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQLD_RAM_MB_SIZE=100
