@@ -1,6 +1,6 @@
 FROM mysql:5.7
 
-ENV MYSQLD_RAM_MB_SIZE 512
+ENV MYSQLD_DATA_RAMDISK_SIZE_MB 600
 ENV DATADIR=/mnt/ramdisk
 
 COPY tmpfs-entrypoint.sh /usr/local/bin/
