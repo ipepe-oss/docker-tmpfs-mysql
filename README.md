@@ -8,7 +8,7 @@ Mysql with ramdisk for data. Normal approach for doing this would be to pass tmp
     privileged: true
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=true
-      - MYSQLD_RAM_MB_SIZE=100
+      - MYSQLD_RAM_MB_SIZE=1000
     ports:
       - "3306:3306"
 ```
